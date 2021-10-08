@@ -38,3 +38,19 @@ function addTodo(event) {
 }
 
 todoButton.addEventListener("click", addTodo);
+
+function deleteTodo(e) {
+  const item = e.target;
+
+  if (item.id === "trash-btn") {
+    const todo = item.parentElement;
+    todo.remove();
+  }
+
+  if (item.id === "check-btn") {
+    const todo = item.parentElement;
+    todo.classList.toggle("completed");
+  }
+}
+
+todoList.addEventListener("click", deleteTodo);
