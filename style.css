@@ -33,14 +33,14 @@ form button {
 }
 
 form button {
-  color: #6a670f;
+  color: #3f3e27;
   background: white;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 form button:hover {
-  background: #6a670f;
+  background: #0f6a2d;
   color: white;
 }
 
@@ -123,4 +123,12 @@ select {
   right: 0;
   padding: 1rem;
   pointer-events: none;
+}
+
+@media screen and (max-width: 556px) {
+  form input,
+  form button {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
 }

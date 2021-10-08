@@ -38,8 +38,6 @@ function addTodo(event) {
   todoInput.value = "";
 }
 
-todoButton.addEventListener("click", addTodo);
-
 function deleteTodo(e) {
   const item = e.target;
 
@@ -53,8 +51,6 @@ function deleteTodo(e) {
     todo.classList.toggle("completed");
   }
 }
-
-todoList.addEventListener("click", deleteTodo);
 
 function filterTodo(e) {
   const todos = todoList.childNodes;
@@ -82,4 +78,6 @@ function filterTodo(e) {
   });
 }
 
+todoButton.addEventListener("click", addTodo);
+todoList.addEventListener("click", deleteTodo);
 filterOption.addEventListener("click", filterTodo);
