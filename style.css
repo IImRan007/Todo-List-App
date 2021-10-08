@@ -96,3 +96,31 @@ form button:hover {
   text-decoration: line-through;
   opacity: 0.5;
 }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: #42185a;
+  width: 10rem;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+#select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+#select::after {
+  content: "\25BC";
+  position: absolute;
+  background-color: #4fbb4f;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  pointer-events: none;
+}
